@@ -1,23 +1,31 @@
-# Pranay Bhosale — Portfolio
+# Pranay Bhosale — upgraded portfolio
 
-A responsive static portfolio for a B.Tech AI/ML student.
+Cinematic dark portfolio with neon accents, responsive navigation, animated abstract hero artwork, interactive project filters and a downloadable student resume.
 
-## Personal details included
-- Pranay Bhosale
-- B.Tech in Artificial Intelligence and Machine Learning, Amity University Mumbai
-- First-year student
-- Learning Python; exploring AI, ML and data analytics
-- Workshop certificates: Microsoft Student Ambassadors workshop (Microsoft Azure, Teams & AI), 24 October 2026; be10x AI Tools & Claude Workshop, 11 August 2026
-- Research work: Maharashtra Livestock Diversity Dataset; electricity subsidy distribution research direction
+## Files
+- `index.html` — content and page structure
+- `style.css` — design and responsive layout
+- `script.js` — navigation and project filters
+- `resume.pdf` — one-page student resume based on known details
 
 ## Before publishing
-Open `index.html` and replace the placeholder GitHub, LinkedIn and email links in the Contact section with your actual profile URLs/address. Review the project descriptions and dates for accuracy.
+1. Replace `ADD-YOUR-EMAIL@example.com` in `index.html` with an email address you are comfortable making public.
+2. Confirm workshop titles/dates and project descriptions.
+3. Add certificate scans and verification links when available.
+4. Resume omits phone and email because those details were not supplied. Add only if you want them public.
+5. Projects are labelled ongoing/research direction; update their status as work is completed.
 
-## Publish free with GitHub Pages
-1. Create a public GitHub repository named exactly `YOUR-USERNAME.github.io`.
-2. Upload `index.html`, `style.css`, and this README to the repository root.
-3. Go to **Settings → Pages**.
-4. Choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
-5. When deployment finishes, visit `https://YOUR-USERNAME.github.io/`.
+## Update the existing GitHub Pages site
+Existing live site: https://pranaybhosale-cell.github.io/Pranay_Bhosale/
 
-Use the live website URL in the Hack2Skill Portfolio Link field. The ZIP file itself and the GitHub repository URL are not the live portfolio URL.
+1. Download and extract this ZIP.
+2. Open repository: https://github.com/pranaybhosale-cell/Pranay_Bhosale
+3. In the repository root, choose **Add file → Upload files**.
+4. Upload `index.html`, `style.css`, `script.js`, `resume.pdf`, and `README.md` from the extracted folder. Confirm replacement of existing files if prompted.
+5. Click **Commit changes**.
+6. Wait 1–3 minutes, then refresh the live site. If old content remains, hard-refresh with Ctrl+F5.
+
+Keep all files in the repository root, not inside an extra nested folder.
+
+## Resume accuracy
+This is a starter student resume. It does not invent grades, phone/email, internships, professional experience or advanced skill proficiency.
