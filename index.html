@@ -22,37 +22,34 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
-  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div><div class="pointer-light" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="wave w1"></i><i class="wave w2"></i></div><div class="cursor-light" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="cursor-ring" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Pranay Bhosale, home"><span class="brand-mark">PB<span>.</span></span><span class="brand-name">PRANAY BHOSALE<small>AI / ML · DATA</small></span></a>
     <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
     <nav id="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#skills">Learning</a><a href="#journey">Journey</a><a href="#work">Projects</a><a href="#certificates">Certificates</a><a href="#contact" class="nav-cta magnetic">Contact <span>↗</span></a>
+      <a href="#about">About</a><a href="#skills">Learning</a><a href="#work">Projects</a><a href="#certificates">Certificates</a><a href="#journey">Journey</a><a href="#contact" class="nav-cta magnetic">Contact <span>↗</span></a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true"><canvas id="network-canvas"></canvas></div>
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> B.TECH STUDENT · BUILDING MY FOUNDATIONS</p>
-        <p class="kicker">HELLO, I'M PRANAY BHOSALE</p>
-        <h1 id="hero-title" data-scramble="Building with curiosity. Learning through creation.">Building with<br><em>curiosity.</em><br>Learning through creation.</h1>
-        <p class="intro">I'm a first-year <strong>Artificial Intelligence & Machine Learning</strong> student at Amity University Mumbai. I'm learning programming, exploring data analysis and building careful, well-documented projects from real-world datasets.</p>
+        <p class="eyebrow"><span class="status-dot"></span> First-year B.Tech · AI &amp; ML · Amity University Mumbai</p>
+        <h1 id="hero-title" aria-label="Building with curiosity. Learning through creation."><span class="hl" aria-hidden="true">Building with curiosity.</span> <span class="hl hl-grad" aria-hidden="true">Learning through creation.</span></h1>
+        <p class="intro">I'm Pranay Bhosale, a first-year <strong>Artificial Intelligence &amp; Machine Learning</strong> student exploring data, programming and technology, and documenting what I learn through careful, source-traceable projects.</p>
         <div class="actions"><a class="button button-primary magnetic" href="#work">Explore my work <span>↘</span></a><a class="button button-quiet magnetic" href="resume.pdf" target="_blank" rel="noopener">View resume <span>↗</span></a><a class="button button-quiet magnetic" href="#contact">Let's connect <span>↗</span></a></div>
-        <div class="hero-meta"><span>PANVEL, MAHARASHTRA</span><i></i><span>FIRST YEAR · B.TECH AI & ML</span></div>
       </div>
-      <div class="hero-visual reveal" aria-label="Interactive abstract network representing connected data points">
-        <canvas id="network-canvas" aria-hidden="true"></canvas>
-        <div class="visual-caption"><span>CONNECTED IDEAS</span><span>DATA · PATTERNS · QUESTIONS</span></div>
-        <div class="visual-core"><span class="core-cross">✳</span><b>THINK</b><small>QUESTION · TEST · LEARN</small></div>
-        <span class="visual-orbit orbit-a" aria-hidden="true"></span><span class="visual-orbit orbit-b" aria-hidden="true"></span>
-      </div>
-      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      <aside class="hero-panel glass spotlight tilt reveal" data-tilt="7" aria-label="At a glance">
+        <p class="panel-title"><span class="status-dot"></span> At a glance</p>
+        <dl><div><dt>Studying</dt><dd>B.Tech, Artificial Intelligence &amp; Machine Learning</dd></div><div><dt>Institution</dt><dd>Amity University Mumbai · first year</dd></div><div><dt>Building</dt><dd>Maharashtra Livestock Diversity Dataset <span class="project-status">IN PROGRESS</span></dd></div><div><dt>Learning</dt><dd>Python · C · data analytics</dd></div><div><dt>Based in</dt><dd>Panvel, Maharashtra</dd></div></dl>
+      </aside>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
     </section>
 
-    <div class="ticker" aria-label="Areas of interest"><span>PYTHON</span><i>✳</i><span>DATA QUALITY</span><i>✳</i><span>AI & MACHINE LEARNING</span><i>✳</i><span>RESEARCH</span><i>✳</i><span>VISUAL STORYTELLING</span></div>
+    <div class="ticker" aria-label="Status"><span>First-year B.Tech AI &amp; ML</span><i>✳</i><span>Amity University Mumbai</span><i>✳</i><span>Panvel, Maharashtra</span><i>✳</i><span>Livestock dataset: in progress</span></div>
 
     <section class="section wrap" id="about" aria-labelledby="about-title">
       <div class="section-top"><span class="section-label">ABOUT</span><span class="section-line"></span><span class="section-note">A WORK IN PROGRESS</span></div>
@@ -71,18 +68,6 @@
       <div class="learning-radar"><span>UP NEXT</span><p>Excel <i>·</i> Power BI <i>·</i> Data visualisation <i>·</i> Research methods</p></div>
     </section>
 
-    <section class="section wrap" id="journey" aria-labelledby="journey-title">
-      <div class="section-top"><span class="section-label">LEARNING JOURNEY</span><span class="section-line"></span><span class="section-note">FOUNDATIONS → APPLICATION</span></div>
-      <div class="journey-panel spotlight">
-        <div class="journey-intro"><p class="kicker">A PRACTICAL APPROACH</p><h2 id="journey-title">Learn it.<br><em>Apply it. Document it.</em></h2><p>I’m building capability step by step: first understanding the fundamentals, then using them in small exercises and data projects, and finally documenting what works and what still needs improvement.</p></div>
-        <div class="journey-steps">
-          <article><span>01 / NOW</span><h3>Build foundations</h3><p>Programming fundamentals in C and Python, alongside AI & ML coursework.</p></article>
-          <article><span>02 / APPLY</span><h3>Work with real data</h3><p>Practise cleaning, checking consistency and retaining source context in the Maharashtra livestock dataset.</p></article>
-          <article><span>03 / NEXT</span><h3>Expand the toolkit</h3><p>Develop practical Excel, Power BI and data visualisation skills through small, reproducible work.</p></article>
-        </div>
-      </div>
-    </section>
-
     <section class="section wrap" id="work" aria-labelledby="work-title">
       <div class="section-top"><span class="section-label">SELECTED WORK</span><span class="section-line"></span><span class="section-note">PROJECTS & EXPLORATIONS</span></div>
       <div class="section-heading"><h2 id="work-title">Work with a question behind it.</h2><p>Current work is labelled honestly. Planned research is not presented as completed output.</p></div>
@@ -95,12 +80,12 @@
           <div><small>THE PROBLEM</small><p>Livestock figures come from different statistical products and reference years. Combining them without preserving their source type can create misleading comparisons.</p></div>
           <div><small>MY APPROACH</small><p>Clean district names, standardise indicator labels, retain source metadata and distinguish census observations from survey estimates and modelled values.</p></div>
           <div><small>DATA SOURCES</small><p>20th Livestock Census (2019) and official animal-husbandry statistical publications. Annual estimates are treated separately from census counts.</p></div>
-          <div><small>TOOLS & METHODS</small><p>Python and spreadsheet-based inspection, CSV data cleaning, validation checks, metadata documentation and district-level reconciliation.</p></div>
+          <div><small>DATA COVERAGE</small><p>Maharashtra, district level. Reference year 2019 (20th Livestock Census); annual survey estimates and modelled values are kept separate from census counts.</p></div><div><small>VALIDATION</small><p>Consistency checks across district names, indicator labels and source types, documented before any analysis is shown here.</p></div><div><small>TOOLS & METHODS</small><p>Python and spreadsheet-based inspection, CSV data cleaning, validation checks, metadata documentation and district-level reconciliation.</p></div>
         </div>
-        <div class="evidence-heading"><div><span class="project-type">INSIDE THE DATASET</span><h4>Evidence, not decoration.</h4></div><span class="evidence-note">Add verified outputs as they are ready</span></div>
+        <div class="evidence-heading"><div><span class="project-type">INSIDE THE DATASET</span><h4>Evidence, not decoration.</h4></div><span class="evidence-note">Verified outputs will appear here</span></div>
         <div class="evidence-grid">
-          <figure class="evidence-card"><div class="evidence-placeholder screenshot-placeholder"><span class="placeholder-icon">▤</span><b>DATASET SCREENSHOT</b><small>Replace with a screenshot of your cleaned master dataset.</small></div><figcaption>Master dataset preview · screenshot placeholder</figcaption></figure>
-          <figure class="evidence-card"><div class="evidence-placeholder chart-placeholder"><span class="placeholder-icon">⌁</span><b>ANALYSIS CHART</b><small>Add a chart only after validating the figures and labels.</small></div><figcaption>District / species analysis · chart placeholder</figcaption></figure>
+          <figure class="evidence-card"><div class="evidence-placeholder screenshot-placeholder"><span class="placeholder-icon">▤</span><b>DATASET SCREENSHOT</b><small>A preview of the cleaned master dataset will be added once it is ready to share.</small></div><figcaption>Master dataset preview · coming soon</figcaption></figure>
+          <figure class="evidence-card"><div class="evidence-placeholder chart-placeholder"><span class="placeholder-icon">⌁</span><b>ANALYSIS CHART</b><small>A chart will be added only after its figures and labels are validated.</small></div><figcaption>District / species analysis · coming soon</figcaption></figure>
         </div>
         <div class="schema-wrap"><div class="schema-heading"><h4>Example data structure</h4><span>SCHEMA ONLY · NO INVENTED VALUES</span></div><div class="table-scroll"><table><thead><tr><th>district</th><th>year</th><th>indicator</th><th>value</th><th>source_type</th></tr></thead><tbody><tr><td>District name</td><td>2019</td><td>Cattle</td><td>—</td><td>CENSUS_RAW</td></tr><tr><td>District name</td><td>YYYY</td><td>Indicator</td><td>—</td><td>ISS_SURVEY_STATE</td></tr><tr><td>District name</td><td>YYYY</td><td>Indicator</td><td>—</td><td>INTERPOLATED_MODEL</td></tr></tbody></table></div><p class="schema-footnote">Illustrative column structure only. Dashes are intentionally blank; these rows are not observations.</p></div>
         <div class="feature-footer"><span>DATA CLEANING <i>·</i> VALIDATION <i>·</i> METADATA <i>·</i> SOURCE TRACEABILITY</span><div class="feature-actions"><button class="button button-quiet project-open magnetic" type="button" data-project-open>Explore case study <span>↗</span></button><a href="https://github.com/pranaybhosale-cell" target="_blank" rel="noopener">GitHub profile <span>↗</span></a></div></div>
@@ -126,9 +111,21 @@
       </div>
     </section>
 
+    <section class="section wrap" id="journey" aria-labelledby="journey-title">
+      <div class="section-top"><span class="section-label">LEARNING JOURNEY</span><span class="section-line"></span><span class="section-note">DATED ONLY WHERE CONFIRMED</span></div>
+      <div class="section-heading"><h2 id="journey-title">Where I am, step by step.</h2><p>Completed, in-progress and planned work, labelled honestly.</p></div>
+      <ol class="timeline">
+        <li class="glass spotlight"><span class="tl-when">First year</span><b>B.Tech, AI &amp; ML</b><p>Amity University Mumbai. Building programming foundations in Python and C.</p><span class="status">ONGOING</span></li>
+        <li class="glass spotlight"><span class="tl-when">11 Aug 2026</span><b>AI Tools &amp; Claude Workshop</b><p>be10x. Workshop completion.</p><span class="status">COMPLETED</span></li>
+        <li class="glass spotlight"><span class="tl-when">24 Oct 2026</span><b>Microsoft Student Ambassadors Workshop</b><p>Microsoft Azure, Teams &amp; AI. Workshop completion.</p><span class="status">COMPLETED</span></li>
+        <li class="glass spotlight"><span class="tl-when">Now</span><b>Livestock dataset and Python practice</b><p>District-level dataset cleaning and documentation, plus beginner builds.</p><span class="status">IN PROGRESS</span></li>
+        <li class="glass spotlight"><span class="tl-when">Next</span><b>Subsidy study, Excel and Power BI</b><p>Maharashtra vs Telangana electricity subsidy research and practical analytics.</p><span class="status warm">PLANNED</span></li>
+      </ol>
+    </section>
+
     <section class="section wrap creative-section" aria-labelledby="creative-title"><div class="section-top"><span class="section-label">BEYOND TECHNOLOGY</span><span class="section-line"></span><span class="section-note">CREATIVE PRACTICE</span></div><div class="creative-panel"><p class="kicker">FILMMAKING · WRITING · VISUAL STORYTELLING</p><h2 id="creative-title">Logic gives structure.<br><em>Stories give it feeling.</em></h2><p>I enjoy filmmaking, writing and visual storytelling. I’m interested in how framing, pacing, emotion and structure shape the way an idea is experienced.</p></div></section>
 
-    <section class="contact-section" id="contact"><div class="wrap contact-inner"><div class="section-top"><span class="section-label">CONTACT</span><span class="section-line"></span><span class="section-note">OPEN TO CONVERSATION</span></div><p class="kicker">LET'S CONNECT</p><h2>Have a thoughtful<br><em>problem to explore?</em></h2><p class="contact-copy">I'm open to connecting with fellow students, mentors and people interested in data, AI, technology and creative projects.</p><div class="contact-links"><a class="button button-primary magnetic" href="mailto:pranaybhosale1409@gmail.com">Email me <span>↗</span></a><button class="button button-quiet magnetic" type="button" data-copy-email="pranaybhosale1409@gmail.com">Copy email <span>⧉</span></button><a class="button button-quiet magnetic" href="https://www.linkedin.com/in/pranay-bhosale/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a><a class="button button-quiet magnetic" href="https://github.com/pranaybhosale-cell" target="_blank" rel="noopener">GitHub <span>↗</span></a></div></div></section>
+    <section class="contact-section" id="contact"><div class="wrap contact-inner"><div class="section-top"><span class="section-label">CONTACT</span><span class="section-line"></span><span class="section-note">OPEN TO CONVERSATION</span></div><p class="kicker">LET'S CONNECT</p><h2>Have a thoughtful<br><em>problem to explore?</em></h2><p class="contact-copy">I'm open to connecting with fellow students, mentors and people interested in data, AI, technology and creative projects.</p><div class="contact-links"><a class="button button-primary magnetic" href="mailto:pranaybhosale1409@gmail.com">Email me <span>↗</span></a><button class="button button-quiet magnetic" type="button" data-copy-email="pranaybhosale1409@gmail.com">Copy email <span>⧉</span></button><a class="button button-quiet magnetic" href="https://www.linkedin.com/in/pranay-bhosale/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a><a class="button button-quiet magnetic" href="https://github.com/pranaybhosale-cell" target="_blank" rel="noopener">GitHub <span>↗</span></a></div><form class="contact-form glass spotlight" id="contact-form" action="mailto:pranaybhosale1409@gmail.com" method="post" enctype="text/plain"><label>Your name<input name="name" type="text" autocomplete="name" required></label><label>Message<textarea name="message" rows="4" required></textarea></label><button class="button button-primary magnetic" type="submit">Open in my email app <span>↗</span></button><p>This opens your email app with the message filled in. Nothing is sent to a server.</p></form></div></section>
   </main>
   <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">PB<span>.</span></span><span class="brand-name">PRANAY BHOSALE<small>AI / ML · DATA</small></span></a><span>© <span id="year"></span> PRANAY BHOSALE</span><a href="#home">BACK TO TOP ↑</a></footer>
 

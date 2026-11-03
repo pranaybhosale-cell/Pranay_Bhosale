@@ -1,70 +1,52 @@
 # Pranay Bhosale — Student Portfolio
 
-A photo-free, responsive portfolio built with semantic HTML5, CSS3 and vanilla JavaScript. It has no framework, build step, backend or server dependency.
+A responsive, photo-free student portfolio built with plain HTML, CSS and JavaScript. No framework, build step or server is required.
 
 ## Run locally
 
-Extract the folder and open `index.html` in a modern browser. The site also works on GitHub Pages. Google Fonts are optional; local system-font fallbacks are included.
+Open `index.html` in a modern browser. The Google Fonts connection is optional; the page falls back to system fonts if offline.
 
-## What's included
+## Included
 
-- Cinematic midnight palette with layered glass surfaces, soft aurora lighting and subtle film grain
-- Pointer-following ambient light, fine-pointer custom cursor, card spotlight, restrained tilt and button interactions
-- Interactive neural-network canvas in the hero; it pauses when off-screen or the tab is hidden
-- Responsive glass navigation, active-section tracking and scroll progress
-- Learning journey, current learning areas, project filters and project case-study dialog
-- Certificate lightbox with previous/next controls, Escape and arrow-key support
-- Copy-email toast, keyboard focus states, reduced-motion handling and touch-device fallbacks
-- SEO metadata, Open Graph/Twitter metadata, favicon and social preview artwork
-- Existing resume and original certificate images retained
+- Interactive canvas network in the hero (pauses off-screen)
+- Responsive navigation, active section state and scroll progress
+- Project filters, subtle reveal effects, fine-pointer cursor/spotlight/tilt
+- Certificate lightbox using the supplied certificate scans
+- Reduced-motion and touch-device handling
+- SEO metadata, Open Graph metadata, favicon and social preview artwork
+- Dataset case study with honest status, source/method notes, schema example and clearly marked evidence placeholders
 
-## Folder structure
+## Design layer (latest update)
 
-```text
-Pranay_Bhosale_Portfolio_Complete/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-├── resume.pdf
-└── assets/
-    ├── favicon.svg
-    ├── og-cover.svg
-    ├── microsoft-certificate.jpg
-    └── be10x-certificate.jpg
-```
+- Aurora background, cursor light, parallax and film grain (all off for reduced motion and touch devices)
+- Full-bleed neural hero with scramble headline and floating glass panel
+- Glass cards with cursor-following edge light, spotlight, shine sweep and 3D tilt
+- Learning Journey timeline, animated project filters, animated modals, mailto contact form (no server)
+- Placeholders for the dataset screenshot and chart remain until verified outputs exist
 
 ## Before publishing — verify these items
 
-1. **Email:** `pranaybhosale1409@gmail.com` is displayed publicly in the contact section. Change it if needed.
-2. **Resume:** replace `resume.pdf` with the latest accurate version when it changes.
-3. **LinkedIn:** confirm `https://www.linkedin.com/in/pranay-bhosale/` is your preferred public profile.
-4. **GitHub:** current project links point to your GitHub profile, not a specific repository. Replace them with a direct repository URL when it is public.
-5. **Dataset evidence:** replace the screenshot placeholder with a real screenshot from the cleaned dataset when ready.
-6. **Analysis chart:** add a chart only when it is based on validated figures and correctly labelled.
-7. **Certificates:** confirm the supplied scans, titles and dates before publishing. Add issuer verification links only if available.
-8. **Social preview:** `assets/og-cover.svg` is the social preview artwork. Some platforms may require a 1200×630 PNG; export one and update `og:image` if needed.
-9. **Website URL:** update `og:url` and `og:image` if the GitHub Pages URL changes.
+1. **Email:** `pranaybhosale1409@gmail.com` is currently displayed in the contact section. Change it in `index.html` if you prefer another public address.
+2. **Resume:** replace `resume.pdf` with your latest accurate PDF if it has changed.
+3. **LinkedIn:** confirm `https://www.linkedin.com/in/pranay-bhosale/` is your preferred public profile URL.
+4. **GitHub:** replace the profile links with specific project repository URLs when those repositories are ready. The current links point to your profile, not to project source code.
+5. **Dataset screenshot:** replace the first evidence placeholder in `index.html` with a real screenshot. Put the image in `assets/`, add an `<img>` with useful alt text, and keep it compressed (WebP/AVIF preferred).
+6. **Analysis chart:** replace the second evidence placeholder only when you have a chart built from validated figures. Do not publish illustrative or unverified values as real findings.
+7. **Project links:** add a direct repository, README, report or dataset link for the livestock project when it is public and ready.
+8. **Certificates:** confirm the two supplied scans and their displayed titles/dates are accurate. Add verification links only if the issuer provides them.
+9. **Social preview:** `assets/og-cover.svg` is a designed preview image. If your sharing platform does not accept SVG previews, export an equivalent 1200×630 PNG and update `og:image` in `index.html`.
+10. **Website URL:** if the repository or GitHub Pages URL changes, update `og:url` and `og:image` in the page head.
 
-## Publish on GitHub Pages
+## Publish on the existing GitHub Pages site
 
 1. Extract the ZIP.
-2. Open the existing repository: https://github.com/pranaybhosale-cell/Pranay_Bhosale
-3. Upload the *contents* of this folder to the repository root, preserving `assets/` and all its files.
-4. Replace `index.html`, `style.css`, `script.js` and `README.md`. Keep `resume.pdf` and both certificate scans.
-5. Commit the changes, wait for GitHub Pages to deploy, then hard-refresh the website.
+2. Open your existing repository: https://github.com/pranaybhosale-cell/Pranay_Bhosale
+3. Upload the *contents* of this folder to the repository root, preserving the `assets/` folder and its files.
+4. Replace the existing `index.html`, `style.css`, `script.js`, and `README.md`. Upload the new `assets/` files. Keep `resume.pdf` and the two certificate scans.
+5. Commit the changes, wait for GitHub Pages to deploy, then hard-refresh the site.
 
-Live site currently listed in the project: https://pranaybhosale-cell.github.io/Pranay_Bhosale/
+Live site: https://pranaybhosale-cell.github.io/Pranay_Bhosale/
 
 ## Accuracy note
 
-The Maharashtra livestock dataset is presented as in progress. The table is a schema illustration, not actual observations. The screenshot and chart areas remain placeholders until verified evidence is available. The electricity subsidy comparison is planned. Workshop credentials are described as workshop participation/completion, not professional certifications.
-
-## Accessibility and performance
-
-- Semantic landmarks and a skip link
-- Keyboard-visible focus styles and native dialog elements
-- Escape support for navigation and dialogs; arrow-key navigation in the certificate lightbox
-- `prefers-reduced-motion` and coarse-pointer fallbacks
-- Canvas particle count is capped and animation pauses off-screen / when the tab is hidden
-- No external JavaScript libraries or build tools
+The livestock project is described as in progress. The table is a schema illustration, not actual observations. The chart and screenshot spaces are intentionally placeholders until verified evidence is ready. Workshop credentials are not described as professional certifications.
