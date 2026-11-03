@@ -16,6 +16,14 @@ Open `index.html` in a modern browser. The Google Fonts connection is optional; 
 - SEO metadata, Open Graph metadata, favicon and social preview artwork
 - Dataset case study with honest status, source/method notes, schema example and clearly marked evidence placeholders
 
+## Design layer (latest update)
+
+- Aurora background, cursor light, parallax and film grain (all off for reduced motion and touch devices)
+- Full-bleed neural hero with scramble headline and floating glass panel
+- Glass cards with cursor-following edge light, spotlight, shine sweep and 3D tilt
+- Learning Journey timeline, animated project filters, animated modals, mailto contact form (no server)
+- Placeholders for the dataset screenshot and chart remain until verified outputs exist
+
 ## Before publishing — verify these items
 
 1. **Email:** `pranaybhosale1409@gmail.com` is currently displayed in the contact section. Change it in `index.html` if you prefer another public address.
