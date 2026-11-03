@@ -29,7 +29,7 @@
   }
 
   // Reveal animations, with a no-motion fallback.
-  const revealItems = $$('.hero-copy,.hero-visual,.section > .section-top,.about-grid,.section-heading,.learning-card,.feature-project,.project-card,.next-grid,.certificate-card,.creative-panel,.contact-inner');
+  const revealItems = $$('.hero-copy,.hero-visual,.section > .section-top,.about-grid,.section-heading,.learning-card,.feature-project,.project-card,.next-grid,.certificate-card,.creative-panel,.contact-inner,.journey-panel');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     revealItems.forEach(item => item.classList.add('reveal'));
     const revealObserver = new IntersectionObserver((entries, observer) => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), { threshold: .1 });
@@ -89,13 +89,27 @@
   const headline = $('#hero-title');
   if (headline && !reduceMotion) headline.classList.add('headline-arrive');
 
+  // Global cursor light: update CSS coordinates without forcing layout reads.
+  const pointerLight = $('.pointer-light');
+  if (pointerLight && finePointer && !reduceMotion) {
+    let lightFrame = 0;
+    addEventListener('pointermove', event => {
+      if (lightFrame) return;
+      lightFrame = requestAnimationFrame(() => {
+        document.documentElement.style.setProperty('--pointer-x', `${event.clientX}px`);
+        document.documentElement.style.setProperty('--pointer-y', `${event.clientY}px`);
+        lightFrame = 0;
+      });
+    }, { passive: true });
+  }
+
   // Cursor, magnetic buttons, card spotlight/tilt and click ripple on fine pointers only.
   if (finePointer && !reduceMotion) {
     const dot = $('.cursor-dot'); const ring = $('.cursor-ring');
     if (dot && ring) { dot.style.opacity = '1'; ring.style.opacity = '1'; }
     let x = -100, y = -100, ringX = -100, ringY = -100;
     addEventListener('pointermove', event => { x = event.clientX; y = event.clientY; if (dot) dot.style.transform = `translate(${x}px,${y}px)`; }, { passive: true });
-    const follow = () => { ringX += (x - ringX) * .16; ringY += (y - ringY) * .16; if (ring) ring.style.transform = `translate(${ringX}px,${ringY}px)`; requestAnimationFrame(follow); }; requestAnimationFrame(follow);
+    let ringFrame = 0; const follow = () => { ringX += (x - ringX) * .18; ringY += (y - ringY) * .18; if (ring) ring.style.transform = `translate(${ringX}px,${ringY}px)`; if (Math.abs(x-ringX)+Math.abs(y-ringY) > .35) ringFrame = requestAnimationFrame(follow); else ringFrame = 0; }; addEventListener('pointermove', () => { if (!ringFrame) ringFrame = requestAnimationFrame(follow); }, { passive: true });
     $$('a,button,.tilt').forEach(target => { target.addEventListener('pointerenter', () => ring?.classList.add('is-hover')); target.addEventListener('pointerleave', () => ring?.classList.remove('is-hover')); });
     $$('.spotlight').forEach(card => {
       card.addEventListener('pointermove', event => { const rect = card.getBoundingClientRect(); card.style.setProperty('--spot-x', `${event.clientX - rect.left}px`); card.style.setProperty('--spot-y', `${event.clientY - rect.top}px`); });
