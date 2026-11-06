@@ -50,3 +50,7 @@ Live site: https://pranaybhosale-cell.github.io/Pranay_Bhosale/
 ## Accuracy note
 
 The livestock project is described as in progress. The table is a schema illustration, not actual observations. The chart and screenshot spaces are intentionally placeholders until verified evidence is ready. Workshop credentials are not described as professional certifications.
+
+## Certificate privacy note
+
+`assets/nielit-yuva-ai-certificate.jpg` is a redacted copy: the photo, date of birth, enrolment number, certificate number and APAAR ID are covered. Keep your original private; do not upload it to the public repository.

@@ -88,3 +88,5 @@ body{background:transparent;font-size:16px}
 @media(prefers-reduced-motion:reduce){.orb,.wave,.hero-panel{animation:none}.reveal{translate:none}.tilt{transform:none}.cursor-light{display:none}}
 @media(hover:none),(pointer:coarse){.cursor-light{display:none}}
 @supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){.glass,.hero-panel,.timeline li,.contact-form{background:#111a2c}}
+
+.certificate-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
