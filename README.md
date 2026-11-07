@@ -54,3 +54,8 @@ The livestock project is described as in progress. The table is a schema illustr
 ## Certificate privacy note
 
 `assets/nielit-yuva-ai-certificate.jpg` is a redacted copy: the photo, date of birth, enrolment number, certificate number and APAAR ID are covered. Keep your original private; do not upload it to the public repository.
+
+## Latest additions
+
+- LearnTube.ai Project Management Assessment certificate (7 Nov 2026) added to Certificates and the Learning Journey.
+- `resume.pdf` regenerated to list all four certificates and the public email address; the "starter resume" placeholder line was removed.
