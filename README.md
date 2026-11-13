@@ -61,3 +61,8 @@ The livestock project is described as in progress. The table is a schema illustr
 - `resume.pdf` regenerated to list all four certificates and the public email address; the "starter resume" placeholder line was removed.
 
 - Scaler Masterclass (RAG vs AI Agents vs Agentic AI, 12 Nov 2026) certificate of participation added to the site and resume.
+
+## 3D layer (Pass 1)
+- `scene3d.js` draws a scroll-driven 3D neural network with Three.js r128 (vendored in `assets/vendor/`, loaded lazily). The camera travels through it as you scroll, and each Learning Journey entry lights up a matching node. Phones with weak hardware, `prefers-reduced-motion` and browsers without WebGL keep the original 2D hero canvas. If frames run slow, it lowers resolution, then turns itself off.
+- `fx.js` adds inertia scrolling (Lenis 1.1.18, desktop pointers only), the 3D certificate coverflow (drag, swipe, arrow keys, buttons), and section dots. `fx.css` styles them and stacks the project cards.
+- Add `?no3d` to the URL to turn the 3D scene off for testing.
