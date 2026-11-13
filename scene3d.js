@@ -11,7 +11,7 @@
   try { const c = document.createElement('canvas'); if (!(c.getContext('webgl') || c.getContext('experimental-webgl'))) return; } catch (e) { return; }
 
   const load = src => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej; document.head.append(s); });
-  const boot = () => load('assets/vendor/three.r128.min.js').then(start).catch(() => {});
+  const boot = () => load('three.r128.min.js').then(start).catch(() => {});
   if (force) boot(); else (window.requestIdleCallback || (f => setTimeout(f, 250)))(boot, { timeout: 1500 });
 
   function start() {

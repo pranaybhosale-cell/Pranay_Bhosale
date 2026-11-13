@@ -18,7 +18,7 @@
     $$('dialog').forEach(d => { d.setAttribute('data-lenis-prevent', ''); d.addEventListener('close', () => lenis.start()); });
     window.__lenis = lenis;
   };
-  if (!reduce && fine) { const s = document.createElement('script'); s.src = 'assets/vendor/lenis.1.1.18.min.js'; s.onload = initLenis; document.head.append(s); }
+  if (!reduce && fine) { const s = document.createElement('script'); s.src = 'lenis.1.1.18.min.js'; s.onload = initLenis; document.head.append(s); }
 
   // 2. Certificate coverflow.
   const grid = $('.certificate-grid');
