@@ -59,3 +59,5 @@ The livestock project is described as in progress. The table is a schema illustr
 
 - LearnTube.ai Project Management Assessment certificate (7 Nov 2026) added to Certificates and the Learning Journey.
 - `resume.pdf` regenerated to list all four certificates and the public email address; the "starter resume" placeholder line was removed.
+
+- Scaler Masterclass (RAG vs AI Agents vs Agentic AI, 12 Nov 2026) certificate of participation added to the site and resume.
